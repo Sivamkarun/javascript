@@ -1,0 +1,53 @@
+/*.yellow{
+	color:yellow;
+}
+
+.fontWeight{
+	font-weight:600;
+}*/
+*{
+	box-sizing: border-box;
+	font-family: helvetica;
+	font-weight: 400;
+	margin: auto;
+}
+.button{
+	display: inline-block;
+	padding: 0.5em 0.75em;	
+	font-size: 2em;
+	text-decoration: none;
+	background-color: #bada55;
+	color:black;
+	font-weight: 700;
+}
+
+.menu{
+	position: fixed;
+	margin: auto;
+	top:0;
+	right: 0;
+	bottom: 0;
+	padding: 2em;
+	color:black;
+	background-color: #1ce;
+	width:200px;
+	text-decoration: none;
+	transition: 
+		opacity 1s ease-in-out,
+		transform 1s ease-in-out;
+	transform:translateX(200px);
+
+}
+
+.menu.is-open{
+	display: block;
+	transform:translateX(0px);
+	transition: opacity 1s ease-in-out,
+		transform 1s ease-in-out;
+}
+
+/*if .menu(space).is-open, it is selecting .is-open as a class WITHIN .menu clear: both;*/
+/*if .menu.isopen, it is selecting BOTH classes*/
+
+/*transition : property,duration,ease
+e.g transition: opacity 1s ease-in-out*/
